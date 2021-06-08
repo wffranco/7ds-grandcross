@@ -1,12 +1,12 @@
 <template>
-  <app-navbar />
-  <router-view />
+  <navbar class="mb-5" />
+  <router-view class="container" />
 </template>
 
 <script>
-import AppNavbar from './components/AppNavbar.vue';
+import Navbar from './components/Navbar.vue';
 
 export default {
-  components: { AppNavbar },
+  components: { Navbar },
 };
 </script>
