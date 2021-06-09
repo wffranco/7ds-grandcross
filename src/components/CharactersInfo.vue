@@ -43,7 +43,7 @@
       <div class="fs-2">HABILIDADES</div>
       <div class="row row-bg justify-content-center">
         <div class="row row-head"> <div>Pasiva</div> </div>
-        <div class="row py-1">
+        <div class="row py-1 align-items-center">
           <div class="col"> <img src="/img/characters/pasive157.png" alt="" /> </div>
           <div class="col"> <div>Si todos los aliados son humanos, aumenta el HP MÄX de todos los aliados en 30% e incrementa el daño causado hacia los enemigos en 20%. (Aplica cuando participa en Batalla)</div> </div>
         </div>
@@ -95,38 +95,38 @@
         </div>
         <div id="pills-tabContent" class="tab-content">
           <div id="pills-level1" class="tab-pane fade show active" role="tabpanel" aria-labelledby="pills-level1-tab">
-            <div class="row py-1">
+            <div class="row py-1 align-items-center">
               <div class="col"> <img src="/img/characters/s1157.png" alt="" class="card-size" /> </div>
               <div class="col">DESCROPCION 1.1 Lorem ipsum dolor sit amet.</div>
             </div>
-            <div class="row py-1">
+            <div class="row py-1 align-items-center">
               <div class="col"> <img src="/img/characters/s2157.png" alt="" class="card-size" /> </div>
               <div class="col">DESCROPCION 2.1 Lorem ipsum dolor sit amet.</div>
             </div>
           </div>
           <div id="pills-level2" class="tab-pane fade" role="tabpanel" aria-labelledby="pills-level2-tab">
-            <div class="row py-1">
+            <div class="row py-1 align-items-center">
               <div class="col"> <img src="/img/characters/s1157.png" alt="" class="card-size" /> </div>
               <div class="col">DESCROPCION 1.2 Lorem ipsum dolor sit amet.</div>
             </div>
-            <div class="row py-1">
+            <div class="row py-1 align-items-center">
               <div class="col"> <img src="/img/characters/s2157.png" alt="" class="card-size" /> </div>
               <div class="col">DESCROPCION 2.2 Lorem ipsum dolor sit amet.</div>
             </div>
           </div>
           <div id="pills-level3" class="tab-pane fade" role="tabpanel" aria-labelledby="pills-level3-tab">
-            <div class="row py-1">
+            <div class="row py-1 align-items-center">
               <div class="col"> <img src="/img/characters/s1157.png" alt="" class="card-size" /> </div>
               <div class="col">DESCROPCION 1.3 Lorem ipsum dolor sit amet.</div>
             </div>
-            <div class="row py-1">
+            <div class="row py-1 align-items-center">
               <div class="col"> <img src="/img/characters/s2157.png" alt="" class="card-size" /> </div>
               <div class="col">DESCROPCION 2.3 Lorem ipsum dolor sit amet.</div>
             </div>
           </div>
         </div>
         <div class="row row-head"> <div>Ultimate</div> </div>
-        <div class="row py-1">
+        <div class="row py-1 align-items-center">
           <div class="col"> <img src="/img/characters/ulti_liz_01.png" alt="" class="card-size" /> </div>
           <div class="col">DESCRIPCION-U Lorem ipsum dolor sit amet consectetur.</div>
         </div>
