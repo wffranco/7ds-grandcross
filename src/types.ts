@@ -8,10 +8,10 @@ export interface Character {
   _id: string;
   name: string;
   image: string;
-  attribute: string;
-  habilities: Habilities;
-  pasive: Card;
-  ultimate: Card;
+  // attribute: string;
+  // habilities: Habilities;
+  // pasive: Card;
+  // ultimate: Card;
 }
 
 export interface Hability {
