@@ -3,8 +3,17 @@ import { Character } from '@/types';
 
 const characters = ref<Character[]>([]);
 
-export const refCharacter = () => characters;
-export const useCharacter = () => readonly(characters);
+// temporal data
+characters.value = Array(20).fill({
+  name: 'Liz',
+  image: '/img/characters/character157.png',
+}).map((character, id) => ({
+  _id: `${id}`,
+  ...character,
+}));
+
+export const refCharacters = () => characters;
+export const useCharacters = () => readonly(characters);
 
 export function addCharacter(character: Character) {
   characters.value.push(character);
