@@ -1,3 +1,5 @@
+import firebase from 'firebase/app';
+
 export interface Card {
   image: string;
   description: string;
@@ -21,3 +23,5 @@ export interface Hability {
 }
 
 export type Habilities = Hability[];
+
+export type User = firebase.User;
