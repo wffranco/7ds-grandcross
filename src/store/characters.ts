@@ -1,12 +1,14 @@
 import { readonly, ref } from '@vue/reactivity';
 import { Character } from '@/types';
+import { images } from './tmp';
 
 const characters = ref<Character[]>([]);
 
 // temporal data
 characters.value = Array(20).fill({
   name: 'Liz',
-  image: '/img/characters/character157.png',
+  // image: '/img/characters/character157.png',
+  image: images.thumbnail,
 }).map((character, id) => ({
   _id: `${id}`,
   ...character,
