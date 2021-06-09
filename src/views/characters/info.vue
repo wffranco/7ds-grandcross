@@ -1,6 +1,6 @@
 <template>
   <div>
-    <characters-info />
+    <characters-info :id="`${$route.params.id}`" />
   </div>
 </template>
 
@@ -9,7 +9,6 @@ import CharactersInfo from '@/components/CharactersInfo.vue';
 
 export default {
   components: { CharactersInfo },
-
 };
 </script>
 

@@ -1,16 +1,21 @@
 <template>
   <div class="d-flex flex-wrap justify-content-center">
-    <div v-for="item of 16" :key="item" class="d-flex flex-column">
-      <router-link :to="`/personajes/${item}`">
-        <img src="@/assets/img/character157.png" alt="1" class="m-1 link-hover char-size" />
+    <div v-for="character of characters" :key="character._id" class="d-flex flex-column">
+      <router-link :to="`/personajes/${character._id}`">
+        <img :src="character.image" :alt="character.name" class="m-1 link-hover char-size" />
       </router-link>
-      <span class=" text-center text-white">Name</span>
+      <span class=" text-center text-white">{{ character.name }}</span>
     </div>
   </div>
 </template>
 
-<script>
+<script>import { useCharacters } from '@/store/characters';
+
 export default {
+  setup() {
+    const characters = useCharacters();
+    return { characters };
+  },
 };
 </script>
 

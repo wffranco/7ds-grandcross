@@ -1,21 +1,33 @@
 <template>
   <div class="row justify-content-between text-center">
     <div class="col">
-      {{ $route.params.id }}
+      {{ character?._id }}
     </div>
     <div class="col">
-      Column
+      <img :src="character?.image" :alt="character?.name" class="m-1 link-hover char-size" />
     </div>
     <div class="col">
-      Column
+      {{ character?.name }}
     </div>
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { getCharacter } from '@/store/characters';
+import { computed, defineComponent } from 'vue';
 
-};
+export default defineComponent({
+  props: {
+    id: {
+      type: String,
+      required: true,
+    },
+  },
+  setup(props) {
+    const character = computed(() => getCharacter(props.id));
+    return { character };
+  },
+});
 </script>
 
 <style lang="scss" scoped>
