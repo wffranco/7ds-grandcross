@@ -1,10 +1,10 @@
 <template>
   <div class="d-flex flex-wrap justify-content-center">
-    <div v-for="item of 16" :key="item.id" class="">
-      <router-link :to="'#'" class="link-hover d-flex flex-column text-decoration-none char-border">
-        <img src="@/assets/img/character157.png" alt="1" class="m-1 char-size" />
-        <span class=" text-center text-white">Name</span>
+    <div v-for="item of 16" :key="item.id" class="d-flex flex-column">
+      <router-link :to="'#'">
+        <img src="@/assets/img/character157.png" alt="1" class="m-1 link-hover char-size" />
       </router-link>
+      <span class=" text-center text-white">Name</span>
     </div>
   </div>
 </template>
@@ -21,11 +21,8 @@ export default {
 }
 
 .link-hover:hover {
-  background-color: #2d7fcc;
+  transform: scale(1.1);
 }
 
-.char-border {
-  border-radius: 3px;
-}
 
 </style>
