@@ -1,7 +1,7 @@
 <template>
   <div class="d-flex flex-wrap justify-content-center">
-    <div v-for="item of 16" :key="item.id" class="d-flex flex-column">
-      <router-link :to="'#'">
+    <div v-for="item of 16" :key="item" class="d-flex flex-column">
+      <router-link :to="`/personajes/${item}`">
         <img src="@/assets/img/character157.png" alt="1" class="m-1 link-hover char-size" />
       </router-link>
       <span class=" text-center text-white">Name</span>

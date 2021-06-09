@@ -1,5 +1,5 @@
 <template>
-  <div class="Personajes">
+  <div class="personajes">
     <h1 class="mb-4">Personajes</h1>
     <characters />
   </div>

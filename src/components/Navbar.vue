@@ -22,7 +22,7 @@
               <router-link to="/" class="nav-link" aria-current="page">Inicio</router-link>
             </li>
             <li class="nav-item d-flex justify-content-center">
-              <router-link to="/Personajes" class="nav-link" aria-current="page">Personajes</router-link>
+              <router-link to="/personajes" class="nav-link" aria-current="page">Personajes</router-link>
             </li>
           </ul>
         </div>
