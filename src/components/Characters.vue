@@ -20,6 +20,10 @@ export default {
   width: 95px;
 }
 
+.link-hover {
+  transition: all .05s ease-in-out;
+}
+
 .link-hover:hover {
   transform: scale(1.1);
 }
