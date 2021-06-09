@@ -3,10 +3,11 @@
   <router-view class="container" />
 </template>
 
-<script>
+<script lang="ts">
+import { defineComponent } from 'vue';
 import Navbar from './components/Navbar.vue';
 
-export default {
+export default defineComponent({
   components: { Navbar },
-};
+});
 </script>
