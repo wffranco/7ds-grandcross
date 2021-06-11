@@ -134,7 +134,7 @@
     </div>
     <!-- COLUMNA 3 -->
     <div class="col">
-      <div class="row row-bg justify-content-center">
+      <div class="row row-bg justify-content-center py-2">
         <div class="row">
           <img src="/img/characters/picture157.png" alt="" class="img-size py-3 mx-auto" />
           <div></div>
