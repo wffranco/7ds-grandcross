@@ -32,11 +32,11 @@ export function getCharacter(_id: string) {
 
 db.collection('character').add({
   name: 'liz',
-  img: null
+  img: null,
 })
-.then((docRef: { id: any; }) => {
-  console.log("Document written with ID: ", docRef.id);
-})
-.catch((error: any) => {
-  console.error("Error adding document: ", error);
-});
+  .then((docRef: { id: any; }) => {
+    console.log('Document written with ID: ', docRef.id);
+  })
+  .catch((error: any) => {
+    console.error('Error adding document: ', error);
+  });
