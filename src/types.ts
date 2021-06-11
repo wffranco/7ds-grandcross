@@ -9,7 +9,7 @@ export interface Card {
 export interface Character {
   _id: string;
   name: string;
-  image: string;
+  image?: string;
   // attribute: string;
   // habilities: Habilities;
   // pasive: Card;
