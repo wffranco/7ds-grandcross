@@ -176,11 +176,12 @@
         </div>
       </div>
     </div>
+    <button @click="addCharacter">Click!</button>
   </div>
 </template>
 
 <script lang="ts">
-import { getCharacter } from '@/store/characters';
+import { getCharacter, addCharacter } from '@/store/characters';
 import { computed, defineComponent } from 'vue';
 
 export default defineComponent({
@@ -192,7 +193,7 @@ export default defineComponent({
   },
   setup(props) {
     const character = computed(() => getCharacter(props.id));
-    return { character };
+    return { character, addCharacter };
   },
 });
 </script>

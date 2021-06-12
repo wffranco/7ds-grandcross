@@ -30,13 +30,16 @@ export function getCharacter(_id: string) {
 //   characters.value = characters.value.filter(character => character._id !== _id);
 // }
 
-db.collection('character').add({
-  name: 'liz',
-  img: null,
-})
-  .then((docRef: { id: any; }) => {
-    console.log('Document written with ID: ', docRef.id);
+export function addCharacter () {
+  db.collection('character').add({
+    name: 'liz',
+    img: null,
   })
-  .catch((error: any) => {
-    console.error('Error adding document: ', error);
-  });
+    .then((docRef: { id: any; }) => {
+      console.log('Document written with ID: ', docRef.id);
+    })
+    .catch((error: any) => {
+      console.error('Error adding document: ', error);
+    });
+}
+
